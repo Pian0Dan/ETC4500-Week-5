@@ -1,7 +1,6 @@
 # Use debug() to find what's wrong with this multivariate scaling function?
 
 mvscale <- function(object) {
-  browser()
   # centre the data
   mat <- sweep(object, 2L, colMeans(object))
   # compute the covariance matrix
